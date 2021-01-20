@@ -16,7 +16,7 @@ public class LoginActions {
         loginPage.loginToTMS();
     }
 
-    public void enterToTMS() {
+    public void enterToTMS() throws InterruptedException {
         loginPage.clickOnEnterToTMS();
     }
 
