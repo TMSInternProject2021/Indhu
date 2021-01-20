@@ -36,7 +36,7 @@ public class LoginStep {
     }
 
     @And("user enters to tms")
-    public void clickEnterToTms() {
+    public void clickEnterToTms() throws InterruptedException {
         loginAction.enterToTMS();
     }
 
