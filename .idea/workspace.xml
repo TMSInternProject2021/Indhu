@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9466324c-b15a-4591-a647-db269e69a168" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/TMSUIAutomation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TMSUIAutomation/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMSUIAutomation/src/test/java/com/quinbay/automation/Action/LoginAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/TMSUIAutomation/src/test/java/com/quinbay/automation/Action/LoginAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMSUIAutomation/src/test/java/com/quinbay/automation/Action/LoginActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/TMSUIAutomation/src/test/java/com/quinbay/automation/Action/LoginActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMSUIAutomation/src/test/java/com/quinbay/automation/CucumberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/TMSUIAutomation/src/test/java/com/quinbay/automation/CucumberRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMSUIAutomation/src/test/java/com/quinbay/automation/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/TMSUIAutomation/src/test/java/com/quinbay/automation/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMSUIAutomation/src/test/java/com/quinbay/automation/Pages/LoginPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/TMSUIAutomation/src/test/java/com/quinbay/automation/Pages/LoginPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMSUIAutomation/src/test/java/com/quinbay/automation/steps/LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/TMSUIAutomation/src/test/java/com/quinbay/automation/steps/LoginStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMSUIAutomation/src/test/java/com/quinbay/automation/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/TMSUIAutomation/src/test/java/com/quinbay/automation/steps/LoginSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMSUIAutomation/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/TMSUIAutomation/src/test/resources/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMSUIAutomation/src/test/resources/features/LoginTms.feature" beforeDir="false" afterPath="$PROJECT_DIR$/TMSUIAutomation/src/test/resources/features/LoginTms.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TMSUIAutomation/src/test/resources/features/Tms.feature" beforeDir="false" afterPath="$PROJECT_DIR$/TMSUIAutomation/src/test/resources/features/Tms.feature" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nHyrDoZyy7pTYD0g7U4TipLpxG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TMSUIAutomation/src/test/resources/drivers" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TMSUIAutomation/src/test/resources/drivers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Feature: LoginToTMS">
+    <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/TMSUIAutomation/src/test/resources/features/Login.feature" />
+      <option name="GLUE" value="com.quinbay.automation.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TMSUIAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: LoginToTMS" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/TMSUIAutomation/src/test/resources/features/LoginToTMS.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TMSUIAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: LoginToTMS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: Tms" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/TMSUIAutomation/src/test/resources/features/Tms.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TMSUIAutomation" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Tms" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Login to TMS with correct credentials" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/TMSUIAutomation/src/test/resources/features/Login.feature" />
+      <option name="GLUE" value="com.quinbay.automation.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="TMSUIAutomation" />
+      <option name="NAME_FILTER" value="^Login to TMS with correct credentials$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Login to TMS with correct credentials$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Login to TMS with correct credentials" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CucumberRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TMSUIAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.quinbay.automation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.quinbay.automation" />
+      <option name="MAIN_CLASS_NAME" value="com.quinbay.automation.CucumberRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Feature: LoginToTMS" />
+        <item itemvalue="Cucumber Java.Feature: Tms" />
+        <item itemvalue="Cucumber Java.Feature: Login" />
+        <item itemvalue="Cucumber Java.Scenario: Login to TMS with correct credentials" />
+        <item itemvalue="JUnit.CucumberRunner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9466324c-b15a-4591-a647-db269e69a168" name="Default Changelist" comment="" />
+      <created>1611061507895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611061507895</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

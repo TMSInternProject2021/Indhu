@@ -1,0 +1,130 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "  User navigates to TMS Login page",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4154000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on TMS Login page",
+            "match": {
+              "location": "com.quinbay.automation.steps.LoginSteps.tmsHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-19T14:06:07.840Z",
+        "line": 6,
+        "name": "Login to TMS with correct credentials",
+        "description": "",
+        "id": "loginfeature;login-to-tms-with-correct-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 107000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter username as \"tmsadmin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tmsadmin\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.quinbay.automation.steps.LoginSteps.enterUserName(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter password as \"Test@2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test@2020\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.quinbay.automation.steps.LoginSteps.enterPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on Login",
+            "match": {
+              "location": "com.quinbay.automation.steps.LoginSteps.hitLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on Application selector page",
+            "match": {
+              "location": "com.quinbay.automation.steps.LoginSteps.homePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 280000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on Enter to TMS",
+            "match": {
+              "location": "com.quinbay.automation.steps.LoginSteps.enterToTMS()"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          }
+        ]
+      }
+    ],
+    "name": "LoginFeature",
+    "description": "",
+    "id": "loginfeature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@LoginFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
