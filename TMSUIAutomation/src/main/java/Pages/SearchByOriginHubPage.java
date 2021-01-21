@@ -1,4 +1,4 @@
-package com.quinbay.automation.Pages;
+package Pages;
 
 import io.cucumber.java.en.Given;
 import org.openqa.selenium.WebDriver;
