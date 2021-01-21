@@ -16,9 +16,8 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public class LoginStep {
     public static WebDriver driver;
     LoginActions loginAction;
-    JavascriptExecutor js = (JavascriptExecutor) driver;
 
-    @Given("User with valid login credentials")
+    @Given("user with valid login credentials")
     public void login() {
         System.setProperty("webdriver.chrome.driver","src/test/resources/drivers/chromedriver");
         driver = new ChromeDriver();
@@ -30,7 +29,7 @@ public class LoginStep {
 
     }
 
-    @When("user logs into tms application")
+    @When("user logins into tms application")
     public void loginToTms() throws InterruptedException {
         loginAction.loginWithData();
     }
@@ -51,7 +50,7 @@ public class LoginStep {
     }
 
     @And("user selects settings and moves to linehaul details page")
-    public void selectSettings() {
+    public void selectSettingsAndChooseLineHaulDetails() {
         loginAction.ClickOnSettings();
     }
 
