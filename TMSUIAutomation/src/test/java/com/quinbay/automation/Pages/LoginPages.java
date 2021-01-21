@@ -62,10 +62,10 @@ public class LoginPages {
         }
     }
 
-    @FindBy(xpath = "//*[@id=\"mount\"]/div/div/div[1]/div/div[1]/div[2]/ul/li[7]/a/span[2]")
+    @FindBy(xpath = "//div//div//li//span[contains(text(),'Settings')]")
     WebElement settings;
 
-    @FindBy(xpath = "/html/body/div/div/div/div[2]/div[2]/div[2]/ul/li[15]")
+    @FindBy(xpath = "//div//div//li[contains(text(),'Linehaul Details')]")
     WebElement linehaul;
 
     public void clickSettings() {
