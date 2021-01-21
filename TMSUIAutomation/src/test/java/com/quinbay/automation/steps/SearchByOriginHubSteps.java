@@ -13,7 +13,7 @@ public class SearchByOriginHubSteps {
     SearchByOriginHubAction searchAction;
     WebDriver driver;
 
-    @Given("User lands on linehaul details page")
+    @Given("user lands on linehaul details page")
     public void lineHaulPage(){
         driver = LoginStep.driver;
         searchAction=new SearchByOriginHubAction(driver);

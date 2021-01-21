@@ -12,7 +12,7 @@ public class EditConnectionSteps {
     EditConnectionAction editAction;
     WebDriver driver;
 
-    @Given("User should be on linehauldetails page")
+    @Given("user should be on linehauldetails page")
     public void lineHaulPage(){
         driver = LoginStep.driver;
         editAction=new EditConnectionAction(driver);

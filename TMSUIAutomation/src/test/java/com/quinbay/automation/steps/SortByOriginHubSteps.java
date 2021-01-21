@@ -11,7 +11,7 @@ public class SortByOriginHubSteps {
     SortByOriginHubAction sortAction;
     WebDriver driver;
 
-    @Given("User lands be on linehaul details page")
+    @Given("user lands be on linehaul details page")
     public void lineHaulPage(){
         driver = LoginStep.driver;
         sortAction=new SortByOriginHubAction(driver);
