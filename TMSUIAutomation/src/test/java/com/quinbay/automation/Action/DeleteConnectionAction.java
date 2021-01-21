@@ -11,6 +11,9 @@ public class DeleteConnectionAction {
         deleteConnectionPage = PageFactory.initElements(driver, DeleteConnectionPage.class);
     }
 
+    public void createConnection() throws InterruptedException {
+        deleteConnectionPage.createNewConnection();
+    }
     public void ClickOnDelete() {
         deleteConnectionPage.clickDelete();
     }
