@@ -13,14 +13,14 @@ public class DeleteConnectioSteps {
     DeleteConnectionAction deleteAction;
     WebDriver driver;
 
-    @Given("User should be on Linehaul details page")
+    @Given("user should be on Linehaul details page")
     public void lineHaulPage(){
         driver = LoginStep.driver;
         deleteAction=new DeleteConnectionAction(driver);
         System.out.println("Delete Connection");
     }
 
-    @And("User creates new connection")
+    @And("user creates new connection")
     public void createNewConnection() throws InterruptedException {
         deleteAction.createConnection();
     }
