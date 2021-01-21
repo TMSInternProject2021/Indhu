@@ -19,6 +19,11 @@ public class EditConnectionSteps {
         System.out.println("Edit Connection");
     }
 
+    @And("user creates a new connection")
+    public void createNewConnection() throws InterruptedException {
+        editAction.createConnection();
+    }
+
     @When("user clicks edit icon for particular connection")
     public void clickOnEdit() {
         editAction.editConnection();
