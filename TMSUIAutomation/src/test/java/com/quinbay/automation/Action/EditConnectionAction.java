@@ -11,6 +11,10 @@ public class EditConnectionAction {
         editConnectionPage = PageFactory.initElements(driver, EditConnectionPage.class);
     }
 
+    public void createConnection() throws InterruptedException {
+        editConnectionPage.createConnection();
+    }
+
     public void editConnection() {
         editConnectionPage.clickOnEditAction();
     }
