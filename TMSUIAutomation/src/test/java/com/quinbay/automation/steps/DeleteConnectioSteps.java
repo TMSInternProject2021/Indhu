@@ -2,6 +2,8 @@ package com.quinbay.automation.steps;
 
 import com.quinbay.automation.Action.DeleteConnectionAction;
 import com.quinbay.automation.Action.EditConnectionAction;
+import io.cucumber.java.bs.A;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -18,7 +20,11 @@ public class DeleteConnectioSteps {
         System.out.println("Delete Connection");
     }
 
-    @When("user clicks delete icon for particular connection")
+    @And("User creates new connection")
+    public void createNewConnection() throws InterruptedException {
+        deleteAction.createConnection();
+    }
+    @When("user clicks delete icon for connection created")
     public void clickOnDelete() {
         deleteAction.ClickOnDelete();
     }
