@@ -13,7 +13,7 @@ public class MandatoryErrorMessageSteps {
     WebDriver driver;
     JavascriptExecutor js = (JavascriptExecutor) driver;
 
-    @Given("User should be on Add new connection pop-up")
+    @Given("user should be on Add new connection pop-up")
     public void addNewConnectionPopUpPage() {
         driver = LoginStep.driver;
         errorMessageAction=new MandatoryErrorMessageAction(driver);
