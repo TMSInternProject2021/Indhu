@@ -18,6 +18,7 @@
   @EditConnection @Positive
   Scenario:Create and Edit the connection
     Given User should be on linehauldetails page
+    And user creates a new connection
     When user clicks edit icon for particular connection
     And user edit the fields and clicks on save
     Then validate if the connection has been edited
@@ -25,7 +26,8 @@
   @DeleteConnection @Positive
   Scenario:Create and Delete the connection
     Given User should be on Linehaul details page
-    When user clicks delete icon for particular connection
+    And User creates new connection
+    When user clicks delete icon for connection created
     Then validate if the connection has been deleted
 
   @SortByOriginHub @Positive
@@ -45,11 +47,11 @@
   Scenario:Mandatory error message for create linehaul connection
     Given User should be on Add new connection pop-up
     When user enters invalid data and clicks on save
-    Then validate if mandatory error message is thrown
+    Then mandatory error message is thrown
 
   @PageCountAndDataCount
   Scenario:Verify pageCount and dataCount are equal
-    Given User should be on linehaul details page
+    Given User should be on linehaul detail page
     And search operation is performed
     When user counts number of entries
     And total count is displayed
