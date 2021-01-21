@@ -20,7 +20,7 @@ public class VerifyCountSteps {
     WebDriver driver;
     JavascriptExecutor js = (JavascriptExecutor) driver;
 
-    @Given("User should be on linehaul detail page")
+    @Given("user should be on linehaul detail page")
     public void linehaulDetailsPage() {
         driver = LoginStep.driver;
         verifyCountAction=new VerifyCountAction(driver);
