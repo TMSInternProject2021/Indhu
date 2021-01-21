@@ -17,10 +17,15 @@ public class SearchByOriginHubPage {
         search.click();
     }
 
-    @FindBy(xpath = "(//div//div//label[contains(text(),'TMS Hub')])")
+    @FindBy(xpath = "(//div//div//label[contains(text(),'Ceper Hub')])")
     WebElement chooseHub;
+
+    @FindBy(xpath = "//div//div[@class='margin-b10']")
+    WebElement clickTab;
     public void chooseHubThatNeedsToBeSearched() {
         chooseHub.click();
+        clickTab.click();
     }
 
 }
+//div//div[@class='margin-b10']
