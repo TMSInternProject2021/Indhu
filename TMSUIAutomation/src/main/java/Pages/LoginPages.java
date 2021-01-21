@@ -1,4 +1,4 @@
-package com.quinbay.automation.Pages;
+package Pages;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
