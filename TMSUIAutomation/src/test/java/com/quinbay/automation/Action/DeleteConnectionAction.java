@@ -1,7 +1,6 @@
 package com.quinbay.automation.Action;
 
-import com.quinbay.automation.Pages.DeleteConnectionPage;
-import com.quinbay.automation.Pages.EditConnectionPage;
+import Pages.DeleteConnectionPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -14,7 +13,11 @@ public class DeleteConnectionAction {
     public void createConnection() throws InterruptedException {
         deleteConnectionPage.createNewConnection();
     }
-    public void ClickOnDelete() {
+    public void clickOnDelete() {
         deleteConnectionPage.clickDelete();
+    }
+
+    public void verifyConnectionDeleted() {
+         deleteConnectionPage.verifyConnectionIsDeleted();
     }
 }
