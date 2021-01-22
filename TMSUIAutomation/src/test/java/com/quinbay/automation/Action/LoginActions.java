@@ -1,7 +1,6 @@
 package com.quinbay.automation.Action;
 
-import com.quinbay.automation.Pages.LoginPage;
-import com.quinbay.automation.Pages.LoginPages;
+import Pages.LoginPages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -24,9 +23,15 @@ public class LoginActions {
         loginPage.selectHub();
     }
 
-    public void ClickOnSettings() {
+    public boolean verifyDashboardPage() {
+        return loginPage.verifyDashboardPage();
+    }
+    public void clickOnSettings() throws InterruptedException {
         loginPage.clickSettings();
     }
 
 
+    public boolean verifyLinehaulDetailsPage() {
+        return loginPage.verifyLinehaulDetailsPage();
+    }
 }
