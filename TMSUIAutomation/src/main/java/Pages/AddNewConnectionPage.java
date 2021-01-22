@@ -85,9 +85,12 @@ public class AddNewConnectionPage {
         Thread.sleep(1000);
     }
 
-    public void verifyConnectionCreated(){
+    public boolean verifyConnectionCreated(){
+        String success="Successfully added";
         WebElement addSuccess=driver.findElement(By.xpath("//div//div//p[contains(text(),'Successfully added')]"));
-        System.out.println(addSuccess.getText());
+        if(addSuccess.getText().equals(success))
+            return true;
+        return false;
 
     }
 
