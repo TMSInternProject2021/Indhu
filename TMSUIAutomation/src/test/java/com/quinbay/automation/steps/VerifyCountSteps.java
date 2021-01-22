@@ -7,6 +7,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+
 public class VerifyCountSteps {
     VerifyCountAction verifyCountAction;
     WebDriver driver;
@@ -34,7 +36,7 @@ public class VerifyCountSteps {
 
     @Then("validate if both page count and data count are equal")
     public void validateDataAndTotalCountAreEqual() {
-        verifyCountAction.validateBothCountAreEqual();
+        assertThat("Both counts are not equal",verifyCountAction.validateBothCountAreEqual());
     }
 
 
