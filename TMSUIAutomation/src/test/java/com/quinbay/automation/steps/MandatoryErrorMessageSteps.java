@@ -6,6 +6,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+
 public class MandatoryErrorMessageSteps {
     MandatoryErrorMessageAction errorMessageAction;
     WebDriver driver;
@@ -24,7 +26,7 @@ public class MandatoryErrorMessageSteps {
 
     @Then("mandatory error message is thrown")
     public void errorMessageThrown() {
-       errorMessageAction.verifyErrorMessageIsThrown();
+        assertThat("Mandatory error message is thrown",errorMessageAction.verifyErrorMessageIsThrown());
     }
 
 }
