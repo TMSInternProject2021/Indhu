@@ -1,7 +1,6 @@
 package com.quinbay.automation.Action;
 
-import com.quinbay.automation.Pages.MandatoryErrorMessagePages;
-import com.quinbay.automation.Pages.VerifyCountPage;
+import Pages.MandatoryErrorMessagePages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -12,10 +11,14 @@ public class MandatoryErrorMessageAction {
     }
 
     public void clickAdd() {
-        errorMessagePages.ClickOnAdd();
+        errorMessagePages.clickOnAdd();
     }
 
     public void enterInvalidData() throws InterruptedException {
-        errorMessagePages.InvalidData();
+        errorMessagePages.invalidData();
+    }
+
+    public void verifyErrorMessageIsThrown() {
+        errorMessagePages.verifyMandatoryErrorMessageIsThrown();
     }
 }
