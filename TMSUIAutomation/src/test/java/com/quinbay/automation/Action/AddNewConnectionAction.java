@@ -19,7 +19,7 @@ public class AddNewConnectionAction {
         connectionPage.fillAllFields();
     }
 
-    public void verifyConnectionIsSuccessful() {
-        connectionPage.verifyConnectionCreated();
+    public boolean verifyConnectionIsSuccessful() {
+        return connectionPage.verifyConnectionCreated();
     }
 }
