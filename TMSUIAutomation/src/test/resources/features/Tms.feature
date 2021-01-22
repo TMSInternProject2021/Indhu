@@ -5,7 +5,7 @@
     When user logins into tms application
     And user enters to tms
     And user selects hub
-    Then user lands on TMS home page
+    Then user lands on TMS dashboard page
     And user selects settings and moves to linehaul details page
 
   @AddNewConnection @Positive
