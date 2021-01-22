@@ -1,9 +1,6 @@
 package com.quinbay.automation.Action;
 
-import com.quinbay.automation.Pages.AddNewConnectionPage;
-import com.quinbay.automation.Pages.LoginPages;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en_scouse.An;
+import Pages.AddNewConnectionPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -14,11 +11,15 @@ public class AddNewConnectionAction {
     }
 
     public void clickOnAdd() {
-        connectionPage.ClickOnAdd();
+        connectionPage.clickOnAdd();
     }
 
 
-    public void FillDetails() throws InterruptedException {
-        connectionPage.FillAllFields();
+    public void fillDetails() throws InterruptedException {
+        connectionPage.fillAllFields();
+    }
+
+    public void verifyConnectionIsSuccessful() {
+        connectionPage.verifyConnectionCreated();
     }
 }
