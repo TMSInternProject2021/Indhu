@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,7 +14,7 @@ public class MandatoryErrorMessagePages {
 
     @FindBy(xpath = "//div//button[@class='default-button pull-right marigin-top10 btn']")
     WebElement clickAdd;
-    public void ClickOnAdd() {
+    public void clickOnAdd() {
         clickAdd.click();
     }
 
@@ -23,10 +24,15 @@ public class MandatoryErrorMessagePages {
     @FindBy(xpath = "//div//div//input[@class='input-box-style input dropdown large']")
     WebElement clickDestHub;
 
-    public void InvalidData() throws InterruptedException {
+    public void invalidData() throws InterruptedException {
         clickOriginHub.sendKeys("cbe");
-        Thread.sleep(100);
+        Thread.sleep(1000);
         clickDestHub.sendKeys("sal");
+    }
+
+    public void verifyMandatoryErrorMessageIsThrown(){
+        WebElement errorMsg = driver.findElement(By.xpath("//div//div//span[@class='error-msg error']"));
+        System.out.println(errorMsg.getText());
     }
 
 }
