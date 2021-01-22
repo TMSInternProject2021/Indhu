@@ -1,13 +1,10 @@
 package com.quinbay.automation.steps;
 
-import com.quinbay.automation.Action.LoginAction;
 import com.quinbay.automation.Action.LoginActions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.en_scouse.An;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -24,7 +21,6 @@ public class LoginStep {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, SECONDS);
         driver.get("http://tmsuiapp-01.uata.lokal/tms-ui/");
-        System.out.println("Login page");
         loginAction=new LoginActions(driver);
 
     }
@@ -44,14 +40,15 @@ public class LoginStep {
        loginAction.selectHub();
     }
 
-    @Then("user lands on TMS home page")
-    public void homePage() {
-        System.out.println("Home page");
+    @Then("user lands on TMS dashboard page")
+    public void dashboardPage() {
+       loginAction.verifyDashboardPage();
     }
 
     @And("user selects settings and moves to linehaul details page")
-    public void selectSettingsAndChooseLineHaulDetails() {
-        loginAction.ClickOnSettings();
+    public void selectSettingsAndChooseLineHaulDetails() throws InterruptedException {
+        loginAction.clickOnSettings();
+        loginAction.verifyLinehaulDetailsPage();
     }
 
 }
