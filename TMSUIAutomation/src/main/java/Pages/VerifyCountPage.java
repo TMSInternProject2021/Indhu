@@ -1,11 +1,9 @@
 package Pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.sql.SQLOutput;
 import java.util.List;
 
 public class VerifyCountPage {
@@ -16,8 +14,7 @@ public class VerifyCountPage {
     }
 
 
-   @FindBy(xpath = "//div//div//span//input[@class='input-box-style pull-left search-bar']")
-  //  @FindBy(xpath = "//*[@id=\"mount\"]/div/div/div[2]/div[2]/div[3]/div/div[1]/div/span/input")
+    @FindBy(xpath = "//div//div//span//input[@class='input-box-style pull-left search-bar']")
     WebElement search;
 
     @FindBy(xpath = "//div//div[@class='option'][1]")
@@ -28,7 +25,7 @@ public class VerifyCountPage {
 
     public void performSearch() throws InterruptedException {
        search.click();
-        search.sendKeys("Ceper");
+       search.sendKeys("Ceper");
 
         chooseHub.click();
         clickOnSearch.click();
@@ -48,7 +45,7 @@ public class VerifyCountPage {
     @FindBy(xpath = "//div//div//span[@class='bold-font'][2]")
     WebElement countDisplayed;
     String ct;
-    public void CountDisplayedAtEnd() {
+    public void countDisplayedAtEnd() {
          ct=countDisplayed.getText();
     }
 
@@ -57,7 +54,4 @@ public class VerifyCountPage {
             System.out.println("Both the counts are eqaul");
 
     }
-
-
-
 }
