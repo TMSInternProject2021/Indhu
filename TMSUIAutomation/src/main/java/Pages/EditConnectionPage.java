@@ -114,8 +114,11 @@ public class EditConnectionPage {
         Thread.sleep(1000);
     }
 
-    public void verifyConnectionIsEdited() {
+    public boolean verifyConnectionIsEdited() {
         WebElement editSuccess=driver.findElement(By.xpath("//div//div//p[contains(text(),'Successfully updated')]"));
-        System.out.println(editSuccess.getText());
+        String editmsg="Successfully updated";
+        if(editSuccess.getText().equals(editmsg))
+            return true;
+        return false;
     }
 }
