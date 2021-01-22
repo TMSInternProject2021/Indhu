@@ -18,7 +18,7 @@ public class MandatoryErrorMessageAction {
         errorMessagePages.invalidData();
     }
 
-    public void verifyErrorMessageIsThrown() {
-        errorMessagePages.verifyMandatoryErrorMessageIsThrown();
+    public boolean verifyErrorMessageIsThrown() {
+       return errorMessagePages.verifyMandatoryErrorMessageIsThrown();
     }
 }
