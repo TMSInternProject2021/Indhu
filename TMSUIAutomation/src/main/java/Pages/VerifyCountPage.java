@@ -42,16 +42,17 @@ public class VerifyCountPage {
         System.out.println("ROW COUNT : "+count);
     }
 
-    @FindBy(xpath = "//div//div//span[@class='bold-font'][2]")
+    @FindBy(xpath = "//div//div//span[@c" +
+            "lass='bold-font'][2]")
     WebElement countDisplayed;
     String ct;
     public void countDisplayedAtEnd() {
          ct=countDisplayed.getText();
     }
 
-    public void check() {
+    public boolean check() {
         if((String.valueOf(count)).equals(ct))
-            System.out.println("Both the counts are eqaul");
-
+            return true;
+        return false;
     }
 }
