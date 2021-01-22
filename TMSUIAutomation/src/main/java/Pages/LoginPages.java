@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -63,6 +64,14 @@ public class LoginPages {
         }
     }
 
+    @FindBy(xpath = "//div//div[@class='dashboard-container']")
+    WebElement dashboard;
+
+    public boolean verifyDashboardPage(){
+        if(dashboard!=null)
+            return true;
+        return false;
+    }
     @FindBy(xpath = "//div//div//li//span[contains(text(),'Settings')]")
     WebElement settings;
 
@@ -76,7 +85,10 @@ public class LoginPages {
         linehaul.click();
     }
 
-
-
-
+    public boolean verifyLinehaulDetailsPage() {
+        WebElement verify = driver.findElement(By.xpath("//div//button[@class='default-button pull-right marigin-top10 btn']"));
+        if(verify!=null)
+            return true;
+        return false;
+    }
 }
