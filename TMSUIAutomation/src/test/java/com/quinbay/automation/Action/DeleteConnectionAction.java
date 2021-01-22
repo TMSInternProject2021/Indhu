@@ -17,7 +17,7 @@ public class DeleteConnectionAction {
         deleteConnectionPage.clickDelete();
     }
 
-    public void verifyConnectionDeleted() {
-         deleteConnectionPage.verifyConnectionIsDeleted();
+    public boolean verifyConnectionDeleted() {
+        return  deleteConnectionPage.verifyConnectionIsDeleted();
     }
 }
