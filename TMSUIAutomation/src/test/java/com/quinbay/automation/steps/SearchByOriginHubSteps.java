@@ -1,13 +1,13 @@
 package com.quinbay.automation.steps;
 
 import com.quinbay.automation.Action.SearchByOriginHubAction;
-import com.quinbay.automation.Action.SortByOriginHubAction;
-import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
+
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class SearchByOriginHubSteps {
     SearchByOriginHubAction searchAction;
@@ -17,12 +17,11 @@ public class SearchByOriginHubSteps {
     public void lineHaulPage(){
         driver = LoginStep.driver;
         searchAction=new SearchByOriginHubAction(driver);
-        System.out.println("Search Connection");
     }
 
     @When("user clicks on Origin hub")
     public void clickOnOriginHub() {
-        searchAction.ClickOnOriginHub();
+        searchAction.clickOnOriginHub();
     }
 
     @And("choose the hub to be searched")
@@ -31,7 +30,7 @@ public class SearchByOriginHubSteps {
     }
 
     @Then("user should be able to see the search results")
-    public void SearchResultsFound() {
-        System.out.println("Search Results are found");
+    public void searchResultsFound() {
+        assertThat("Search Results Not found",searchAction.verifySearchResults());
     }
 }
