@@ -29,6 +29,7 @@ public class LoginPages {
         //Thread.sleep(1000);
         loginButton.click();
         Thread.sleep(1000);
+
         //driver.manage().timeouts().implicitlyWait(1000, SECONDS);
 
     }
@@ -38,7 +39,7 @@ public class LoginPages {
     public void clickOnEnterToTMS() throws InterruptedException {
         enterToTMS.click();
       //  driver.manage().timeouts().implicitlyWait(1000, SECONDS);
-        Thread.sleep(100);
+        Thread.sleep(1000);
 
     }
 
@@ -68,11 +69,14 @@ public class LoginPages {
     @FindBy(xpath = "//div//div//li[contains(text(),'Linehaul Details')]")
     WebElement linehaul;
 
-    public void clickSettings() {
+    public void clickSettings() throws InterruptedException {
         settings.click();
       //  driver.manage().timeouts().implicitlyWait(1000, SECONDS);
+        Thread.sleep(1000);
         linehaul.click();
     }
+
+
 
 
 }
