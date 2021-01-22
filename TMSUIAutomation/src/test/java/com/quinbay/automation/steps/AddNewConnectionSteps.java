@@ -31,8 +31,7 @@ public class AddNewConnectionSteps {
 
     @Then("validate if new connection is created")
     public void connectionCreated() {
-        addAction.verifyConnectionIsSuccessful();
-       // System.out.println("ConnectionCreated...");
+        assertThat("New Connection Not created",addAction.verifyConnectionIsSuccessful());
     }
 
 }
