@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,9 +12,10 @@ public class AddNewConnectionPage {
     public AddNewConnectionPage(WebDriver webDriver){
         driver=webDriver;
     }
+
     @FindBy(xpath = "//div//button[@class='default-button pull-right marigin-top10 btn']")
     WebElement clickAdd;
-    public void ClickOnAdd() {
+    public void clickOnAdd() {
         clickAdd.click();
     }
 
@@ -56,31 +58,37 @@ public class AddNewConnectionPage {
     @FindBy(xpath = "//div//div//button[contains(text(),'Save')]")
     WebElement save;
 
-    public void FillAllFields() throws InterruptedException {
+    public void fillAllFields() throws InterruptedException {
         clickOriginHub.sendKeys("Ce");
         chooseOrigin.click();
-        Thread.sleep(100);
+        Thread.sleep(1000);
 
         clickDestHub.sendKeys("TMS");
         chooseDest.click();
-        Thread.sleep(100);
+        Thread.sleep(1000);
 
         date.click();
         chooseDate.click();
 
         repeat.click();
         chooseFrequency.click();
-        Thread.sleep(100);
+        Thread.sleep(1000);
 
         startTime.sendKeys("13:00");
         transitTime.sendKeys("123:08");
 
         vehicleType.click();
         choosevehicle.click();
-        Thread.sleep(100);
+        Thread.sleep(1000);
 
         save.click();
-        Thread.sleep(100);
+        Thread.sleep(1000);
+    }
+
+    public void verifyConnectionCreated(){
+        WebElement addSuccess=driver.findElement(By.xpath("//div//div//p[contains(text(),'Successfully added')]"));
+        System.out.println(addSuccess.getText());
+
     }
 
 }
