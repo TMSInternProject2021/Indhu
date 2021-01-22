@@ -1,10 +1,12 @@
 package Pages;
 
+import com.sun.tools.javac.util.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
 public class DeleteConnectionPage {
 
     WebDriver driver;
@@ -90,9 +92,16 @@ public class DeleteConnectionPage {
         delete.click();
     }
 
+    String deleteMsg="Linehaul connection between Badak and TMS Hub has been deleted succesfully";
+    WebElement deleteSuccess=driver.findElement(By.xpath("//div//div//p[contains(text(),'Linehaul connection between Badak and TMS Hub has been deleted succesfully')]"));
 
-    public void verifyConnectionIsDeleted(){
-        WebElement deleteSuccess=driver.findElement(By.xpath("//div//div//p[contains(text(),'Linehaul connection between Badak and TMS Hub has been deleted succesfully')]"));
-        System.out.println(deleteSuccess.getText());
+    public boolean verifyConnectionIsDeleted(){
+
+       // Assert.assertEquals(deleteMsg,deleteSuccess.getText());
+        if(deleteMsg.equals(deleteSuccess.getText()))
+            return true;
+        return false;
     }
+
+
 }
