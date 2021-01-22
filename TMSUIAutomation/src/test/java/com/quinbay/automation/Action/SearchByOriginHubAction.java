@@ -1,7 +1,6 @@
 package com.quinbay.automation.Action;
 
-import com.quinbay.automation.Pages.SearchByOriginHubPage;
-import com.quinbay.automation.Pages.SortByOriginHubPage;
+import Pages.SearchByOriginHubPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -11,11 +10,15 @@ public class SearchByOriginHubAction {
         searchConnectionPage = PageFactory.initElements(driver, SearchByOriginHubPage.class);
     }
 
-    public void ClickOnOriginHub() {
-        searchConnectionPage.ClickOnOriginHubToSearch();
+    public void clickOnOriginHub() {
+        searchConnectionPage.clickOnOriginHubToSearch();
     }
 
     public void chooseHubForSearch() {
         searchConnectionPage.chooseHubThatNeedsToBeSearched();
+    }
+
+    public boolean verifySearchResults() {
+       return searchConnectionPage.verifySearchByOriginHubIsPerformed();
     }
 }
