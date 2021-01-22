@@ -22,7 +22,7 @@ public class EditConnectionAction {
         editConnectionPage.editFields();
     }
 
-    public void verifyConnectionEdited() {
-        editConnectionPage.verifyConnectionIsEdited();
+    public boolean verifyConnectionEdited() {
+        return editConnectionPage.verifyConnectionIsEdited();
     }
 }
