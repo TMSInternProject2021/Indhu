@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -60,33 +61,34 @@ public class EditConnectionPage {
         clickOriginHub.sendKeys("Be");
 
         chooseOrigin.click();
-        Thread.sleep(100);
+        Thread.sleep(1000);
 
         clickDestHub.sendKeys("TMS");
         chooseDest.click();
-        Thread.sleep(100);
+        Thread.sleep(1000);
 
         date.click();
         chooseDate.click();
 
         repeat.click();
         chooseFrequency.click();
-        Thread.sleep(100);
+        Thread.sleep(1000);
 
         startTime.sendKeys("19:00");
         transitTime.sendKeys("100:08");
 
         vehicleType.click();
         choosevehicle.click();
-        Thread.sleep(100);
+        Thread.sleep(1000);
 
         save.click();
-        Thread.sleep(100);
+        Thread.sleep(1000);
     }
 
     @FindBy(xpath="(//div//div//span//img[@class='icon'])[1]")
     WebElement edit;
-    public void clickOnEditAction() {
+    public void clickOnEditAction() throws InterruptedException {
+        Thread.sleep(1000);
         edit.click();
     }
 
@@ -105,11 +107,15 @@ public class EditConnectionPage {
     public void editFields() throws InterruptedException {
         repeat1.click();
         editRepeat1.click();
+        Thread.sleep(1000);
         editRepeat2.click();
+        Thread.sleep(1000);
         save1.click();
         Thread.sleep(1000);
     }
 
-
-
+    public void verifyConnectionIsEdited() {
+        WebElement editSuccess=driver.findElement(By.xpath("//div//div//p[contains(text(),'Successfully updated')]"));
+        System.out.println(editSuccess.getText());
+    }
 }
