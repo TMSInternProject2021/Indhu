@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -59,33 +60,39 @@ public class DeleteConnectionPage {
             clickOriginHub.sendKeys("Badak");
 
             chooseOrigin.click();
-            Thread.sleep(100);
+            Thread.sleep(1000);
 
             clickDestHub.sendKeys("TMS");
             chooseDest.click();
-            Thread.sleep(100);
+            Thread.sleep(1000);
 
             date.click();
             chooseDate.click();
 
             repeat.click();
             chooseFrequency.click();
-            Thread.sleep(100);
+            Thread.sleep(1000);
 
             startTime.sendKeys("19:00");
             transitTime.sendKeys("100:08");
 
             vehicleType.click();
             choosevehicle.click();
-            Thread.sleep(100);
+            Thread.sleep(1000);
 
             save.click();
-            Thread.sleep(100);
+            Thread.sleep(1000);
     }
 
     @FindBy(xpath = "//div//div//span//img[@class='icon margin-l10']")
     WebElement delete;
     public void clickDelete() {
         delete.click();
+    }
+
+
+    public void verifyConnectionIsDeleted(){
+        WebElement deleteSuccess=driver.findElement(By.xpath("//div//div//p[contains(text(),'Linehaul connection between Badak and TMS Hub has been deleted succesfully')]"));
+        System.out.println(deleteSuccess.getText());
     }
 }
