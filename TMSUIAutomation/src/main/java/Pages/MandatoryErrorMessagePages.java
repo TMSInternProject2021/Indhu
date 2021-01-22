@@ -30,9 +30,12 @@ public class MandatoryErrorMessagePages {
         clickDestHub.sendKeys("sal");
     }
 
-    public void verifyMandatoryErrorMessageIsThrown(){
+    public boolean verifyMandatoryErrorMessageIsThrown(){
         WebElement errorMsg = driver.findElement(By.xpath("//div//div//span[@class='error-msg error']"));
-        System.out.println(errorMsg.getText());
+        String error ="Please select a Hub";
+        if(errorMsg.getText().equals(error))
+            return true;
+        return false;
     }
 
 }
