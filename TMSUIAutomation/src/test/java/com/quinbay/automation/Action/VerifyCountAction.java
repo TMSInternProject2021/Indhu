@@ -22,7 +22,7 @@ public class VerifyCountAction {
         verifyCountPage.countDisplayedAtEnd();
     }
 
-    public void validateBothCountAreEqual() {
-        verifyCountPage.check();
+    public boolean validateBothCountAreEqual() {
+        return verifyCountPage.check();
     }
 }
