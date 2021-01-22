@@ -1,6 +1,7 @@
 package Pages;
 
-import io.cucumber.java.en.Given;
+import com.sun.xml.internal.xsom.XSUnionSimpleType;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,7 +14,7 @@ public class SearchByOriginHubPage {
     }
     @FindBy(xpath = "//div//div//table//span//label[@class='clickable']")
     WebElement search;
-    public void ClickOnOriginHubToSearch() {
+    public void clickOnOriginHubToSearch() {
         search.click();
     }
 
@@ -27,5 +28,29 @@ public class SearchByOriginHubPage {
         clickTab.click();
     }
 
+
+
+    @FindBy(xpath = "(//div//div//span[@class='bold-font'])[3]")
+    WebElement searchCount;
+    public boolean verifySearchByOriginHubIsPerformed(){
+        int count=Integer.parseInt(searchCount.getText());
+        int tableCount = 0;
+        for(int i=1;i<count+1;i++) {
+            WebElement searchResults = driver.findElement(By.xpath("//div//table//tr["+i+"]//td"));
+            if(searchResults.getText().equals("Ceper Hub"))
+            {
+                tableCount++;
+                System.out.println(tableCount);
+            }
+
+        }
+        if(count==tableCount)
+            return true;
+        return false;
+
+
+    }
+
+
+
 }
-//div//div[@class='margin-b10']
