@@ -1,6 +1,6 @@
 package com.quinbay.automation.Action;
 
-import com.quinbay.automation.Pages.SortByOriginHubPage;
+import Pages.SortByOriginHubPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -11,7 +11,11 @@ public class SortByOriginHubAction {
         sortConnectionPage = PageFactory.initElements(driver, SortByOriginHubPage.class);
     }
 
-    public void clickOnDownArrowToSort() {
-        sortConnectionPage.ClickDownArrowToSort();
+    public void clickOnDownArrowToSort() throws InterruptedException {
+        sortConnectionPage.clickDownArrowToSort();
+    }
+
+    public boolean verifySort() {
+        return sortConnectionPage.verifySortByOriginHubInDescendingOrderIsPerformed();
     }
 }
