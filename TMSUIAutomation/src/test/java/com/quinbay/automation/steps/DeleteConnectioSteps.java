@@ -30,6 +30,6 @@ public class DeleteConnectioSteps {
 
     @Then("validate if the connection has been deleted")
     public void deleteSuccess() {
-       deleteAction.verifyConnectionDeleted();
+       assertThat("Connection Not deleted",deleteAction.verifyConnectionDeleted());
     }
 }
