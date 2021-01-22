@@ -1,7 +1,6 @@
 package com.quinbay.automation.Action;
 
-import com.quinbay.automation.Pages.LoginPages;
-import com.quinbay.automation.Pages.VerifyCountPage;
+import Pages.VerifyCountPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -20,7 +19,7 @@ public class VerifyCountAction {
     }
 
     public void countDisplayedAtPageEnd() {
-        verifyCountPage.CountDisplayedAtEnd();
+        verifyCountPage.countDisplayedAtEnd();
     }
 
     public void validateBothCountAreEqual() {
